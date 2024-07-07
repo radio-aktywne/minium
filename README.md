@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Playlists database 💽
+Emission playlists database 💽
 
 [![Lint](https://github.com/radio-aktywne/database-datatunes/actions/workflows/lint.yaml/badge.svg)](https://github.com/radio-aktywne/database-datatunes/actions/workflows/lint.yaml)
 [![Image](https://github.com/radio-aktywne/database-datatunes/actions/workflows/image.yaml/badge.svg)](https://github.com/radio-aktywne/database-datatunes/actions/workflows/image.yaml)

@@ -5,7 +5,7 @@ title: Index
 
 # datatunes database
 
-Playlists database 💽
+Emission playlists database 💽
 
 ## 💡 About
 

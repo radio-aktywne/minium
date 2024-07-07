@@ -3,7 +3,7 @@ _commit: 0.4.0
 _src_path: gh:radio-aktywne/template-database-minio
 accountname: radio-aktywne
 databasename: datatunes
-description: Playlists database 💽
+description: Emission playlists database 💽
 docs: true
 docsurl: https://radio-aktywne.github.io/database-datatunes
 envprefix: DATATUNES
