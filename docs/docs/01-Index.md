@@ -3,11 +3,11 @@ slug: /
 title: Index
 ---
 
-# datatunes database
+# mediatunes database
 
-Emission playlists database 💽
+Emission playlists media 💽
 
 ## 💡 About
 
-`datatunes` is a [`MinIO`](https://min.io) based storage
-for playlists of songs.
+`mediatunes` is a [`MinIO`](https://min.io) based storage
+for media files used in playlists.
