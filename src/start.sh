@@ -2,18 +2,17 @@
 
 # Configuration
 
-host="${DATATUNES__SERVER__HOST:-0.0.0.0}"
-port="${DATATUNES__SERVER__PORTS__S3:-40000}"
-web_port="${DATATUNES__SERVER__PORTS__WEB:-40001}"
-web_public_url="${DATATUNES__URLS__WEB:-http://localhost:40001}"
-admin_user="${DATATUNES__CREDENTIALS__ADMIN__USER:-admin}"
-admin_password="${DATATUNES__CREDENTIALS__ADMIN__PASSWORD:-password}"
-readonly_user="${DATATUNES__CREDENTIALS__READONLY__USER:-readonly}"
-readonly_password="${DATATUNES__CREDENTIALS__READONLY__PASSWORD:-password}"
-readwrite_user="${DATATUNES__CREDENTIALS__READWRITE__USER:-readwrite}"
-readwrite_password="${DATATUNES__CREDENTIALS__READWRITE__PASSWORD:-password}"
-media_bucket="${DATATUNES__BUCKETS__MEDIA:-media}"
-metadata_bucket="${DATATUNES__BUCKETS__METADATA:-metadata}"
+host="${MEDIATUNES__SERVER__HOST:-0.0.0.0}"
+port="${MEDIATUNES__SERVER__PORTS__S3:-40000}"
+web_port="${MEDIATUNES__SERVER__PORTS__WEB:-40001}"
+web_public_url="${MEDIATUNES__URLS__WEB:-http://localhost:40001}"
+admin_user="${MEDIATUNES__CREDENTIALS__ADMIN__USER:-admin}"
+admin_password="${MEDIATUNES__CREDENTIALS__ADMIN__PASSWORD:-password}"
+readonly_user="${MEDIATUNES__CREDENTIALS__READONLY__USER:-readonly}"
+readonly_password="${MEDIATUNES__CREDENTIALS__READONLY__PASSWORD:-password}"
+readwrite_user="${MEDIATUNES__CREDENTIALS__READWRITE__USER:-readwrite}"
+readwrite_password="${MEDIATUNES__CREDENTIALS__READWRITE__PASSWORD:-password}"
+bucket=default
 
 # Start MinIO
 
@@ -49,16 +48,10 @@ echo
 echo "Setting up buckets..."
 echo
 
-if mc ls minio | grep --quiet "${media_bucket}"; then
-	echo "Bucket '${media_bucket}' already exists, skipping..."
+if mc ls minio | grep --quiet "${bucket}"; then
+	echo "Bucket '${bucket}' already exists, skipping..."
 else
-	mc mb --ignore-existing "minio/${media_bucket}"
-fi
-
-if mc ls minio | grep --quiet "${metadata_bucket}"; then
-	echo "Bucket '${metadata_bucket}' already exists, skipping..."
-else
-	mc mb --ignore-existing "minio/${metadata_bucket}"
+	mc mb --ignore-existing "minio/${bucket}"
 fi
 
 # Setup policies
@@ -114,8 +107,7 @@ echo "Admin user: ${admin_user}"
 echo "Read-only user: ${readonly_user}"
 echo "Read-write user: ${readwrite_user}"
 echo
-echo "Media bucket: ${media_bucket}"
-echo "Metadata bucket: ${metadata_bucket}"
+echo "Bucket: ${bucket}"
 
 # Wait for MinIO to exit
 
