@@ -3,11 +3,11 @@ slug: /
 title: Index
 ---
 
-# mediatunes
+# minium
 
 Broadcast playlists media 💽
 
 ## 💡 About
 
-`mediatunes` is a [`MinIO`](https://min.io) based storage
+`minium` is a [`MinIO`](https://min.io) based storage
 for media files used in playlists.
