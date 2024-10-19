@@ -3,9 +3,9 @@ slug: /
 title: Index
 ---
 
-# mediatunes database
+# mediatunes
 
-Emission playlists media 💽
+Broadcast playlists media 💽
 
 ## 💡 About
 
