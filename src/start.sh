@@ -3,9 +3,9 @@
 # Configuration
 
 host="${MINIUM__SERVER__HOST:-0.0.0.0}"
-port="${MINIUM__SERVER__PORTS__S3:-40000}"
-web_port="${MINIUM__SERVER__PORTS__WEB:-40001}"
-web_public_url="${MINIUM__URLS__WEB:-http://localhost:40001}"
+port="${MINIUM__SERVER__PORTS__S3:-10210}"
+web_port="${MINIUM__SERVER__PORTS__WEB:-10211}"
+web_public_url="${MINIUM__URLS__WEB:-http://localhost:10211}"
 admin_user="${MINIUM__CREDENTIALS__ADMIN__USER:-admin}"
 admin_password="${MINIUM__CREDENTIALS__ADMIN__PASSWORD:-password}"
 readonly_user="${MINIUM__CREDENTIALS__READONLY__USER:-readonly}"

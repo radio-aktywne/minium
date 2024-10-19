@@ -8,9 +8,9 @@ docs: true
 docsurl: https://radio-aktywne.github.io/minium
 envprefix: MINIUM
 imagename: databases/minium
-port: 40000
+port: 10210
 registry: true
 releases: true
 reponame: minium
 repourl: https://github.com/radio-aktywne/minium
-webport: 40001
+webport: 10211

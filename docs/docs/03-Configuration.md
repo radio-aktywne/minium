@@ -12,13 +12,13 @@ You can configure the database at runtime using various environment variables:
   (default: `0.0.0.0`)
 - `MINIUM__SERVER__PORTS__S3` -
   port on which the database will be listening
-  (default: `40000`)
+  (default: `10210`)
 - `MINIUM__SERVER__PORTS__WEB` -
   port on which the web interface will be available
-  (default: `40001`)
+  (default: `10211`)
 - `MINIUM__URLS__WEB` -
   public URL of the web interface
-  (default: `http://localhost:40001`)
+  (default: `http://localhost:10211`)
 - `MINIUM__CREDENTIALS__ADMIN__USER` -
   username for the admin user
   (default: `admin`)
