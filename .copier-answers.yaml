@@ -2,15 +2,15 @@
 _commit: 0.5.0
 _src_path: gh:radio-aktywne/template-database-minio
 accountname: radio-aktywne
-databasename: mediatunes
+databasename: minium
 description: Broadcast playlists media 💽
 docs: true
-docsurl: https://radio-aktywne.github.io/mediatunes
-envprefix: MEDIATUNES
-imagename: databases/mediatunes
+docsurl: https://radio-aktywne.github.io/minium
+envprefix: MINIUM
+imagename: databases/minium
 port: 40000
 registry: true
 releases: true
-reponame: mediatunes
-repourl: https://github.com/radio-aktywne/mediatunes
+reponame: minium
+repourl: https://github.com/radio-aktywne/minium
 webport: 40001
