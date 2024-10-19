@@ -1,16 +1,16 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: 0.4.0
+_commit: 0.5.0
 _src_path: gh:radio-aktywne/template-database-minio
 accountname: radio-aktywne
 databasename: mediatunes
-description: Emission playlists media 💽
+description: Broadcast playlists media 💽
 docs: true
-docsurl: https://radio-aktywne.github.io/database-mediatunes
+docsurl: https://radio-aktywne.github.io/mediatunes
 envprefix: MEDIATUNES
 imagename: databases/mediatunes
 port: 40000
 registry: true
 releases: true
-reponame: database-mediatunes
-repourl: https://github.com/radio-aktywne/database-mediatunes
+reponame: mediatunes
+repourl: https://github.com/radio-aktywne/mediatunes
 webport: 40001
