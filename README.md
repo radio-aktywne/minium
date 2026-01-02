@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Broadcast playlists media 💽
+Broadcast playlists media database 💽
 
 [![Lint](https://github.com/radio-aktywne/minium/actions/workflows/lint.yaml/badge.svg)](https://github.com/radio-aktywne/minium/actions/workflows/lint.yaml)
 [![Image](https://github.com/radio-aktywne/minium/actions/workflows/image.yaml/badge.svg)](https://github.com/radio-aktywne/minium/actions/workflows/image.yaml)
@@ -15,8 +15,7 @@ Broadcast playlists media 💽
 
 ## 💡 About
 
-`minium` is a [`MinIO`](https://min.io) based storage
-for media files used in playlists.
+`minium` is a [`MinIO`](https://min.io) database for media files used in playlists.
 
 ## 📄 Further Reading
 
