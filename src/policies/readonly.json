@@ -1,8 +1,6 @@
 {
-  "Version": "2012-10-17",
   "Statement": [
     {
-      "Effect": "Allow",
       "Action": [
         "s3:ListAllMyBuckets",
         "s3:ListBucket",
@@ -11,7 +9,9 @@
         "s3:GetObject",
         "s3:GetObjectVersion"
       ],
+      "Effect": "Allow",
       "Resource": ["arn:aws:s3:::*"]
     }
-  ]
+  ],
+  "Version": "2012-10-17"
 }

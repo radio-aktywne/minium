@@ -5,9 +5,8 @@ title: Index
 
 # minium
 
-Broadcast playlists media 💽
+Broadcast playlists media database 💽
 
 ## 💡 About
 
-`minium` is a [`MinIO`](https://min.io) based storage
-for media files used in playlists.
+`minium` is a [`MinIO`](https://min.io) database for media files used in playlists.
