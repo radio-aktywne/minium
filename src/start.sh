@@ -34,7 +34,7 @@ pid="$!"
 echo "Setting up MinIO..."
 echo
 
-while ! mc config host add minio "http://localhost:${port}" "${admin_user}" "${admin_password}" >/dev/null 2>&1; do
+while ! mc alias set minio "http://localhost:${port}" "${admin_user}" "${admin_password}" >/dev/null 2>&1; do
 	echo "Waiting for MinIO to start..."
 	sleep 0.1
 done
