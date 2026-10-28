@@ -34,6 +34,3 @@ You can configure the database at runtime using various environment variables:
 - `MINIUM__SERVER__PORTS__WEB` -
   port on which the web interface will be available
   (default: `10211`)
-- `MINIUM__URLS__WEB` -
-  public URL of the web interface
-  (default: `http://localhost:10211`)

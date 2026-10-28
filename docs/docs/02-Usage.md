@@ -29,4 +29,3 @@ S3_ENDPOINT_URL='http://localhost:10210' \
 ## Web UI
 
 You can access the web UI in your browser at port `10211`.
-You can log in with any of the existing users and perform basic operations there.

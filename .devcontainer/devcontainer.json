@@ -1,5 +1,5 @@
 {
-  "image": "ghcr.io/radio-aktywne/devcontainers/database-minio:latest",
+  "image": "ghcr.io/radio-aktywne/devcontainers/database-rustfs:latest",
   "runArgs": [
     "--uts=host",
     "--ipc=host",
