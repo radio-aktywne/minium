@@ -53,8 +53,8 @@
         coreutils = pkgs.coreutils;
         trunk = pkgs.trunk-io;
         copier = pkgs.python314.withPackages (ps: [ps.copier]);
-        minio = pkgs.minio;
-        minio-client = pkgs.minio-client;
+        rustfs = pkgs.multiverse.latest.rustfs;
+        rustfs-cli = pkgs.multiverse.latest.rustfs-cli;
         s5cmd = pkgs.s5cmd;
         tini = pkgs.tini;
         su-exec = pkgs.su-exec;
@@ -66,11 +66,6 @@
           config = {
             # Allow packages with non-free licenses
             allowUnfree = true;
-
-            # Allow specific insecure packages
-            permittedInsecurePackages = [
-              "minio-2025-10-15T17-29-55Z"
-            ];
           };
 
           overlays = [
@@ -96,8 +91,8 @@
               coreutils
               trunk
               copier
-              minio
-              minio-client
+              rustfs
+              rustfs-cli
               s5cmd
             ];
 
@@ -110,8 +105,8 @@
             name = "runtime";
 
             packages = [
-              minio
-              minio-client
+              rustfs
+              rustfs-cli
               tini
               su-exec
             ];
